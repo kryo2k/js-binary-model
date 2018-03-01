@@ -36,6 +36,6 @@ let userEncode = Person.encode({
 
 console.log('Encoded: %s', util.inspect(userEncode.toString('base64'), true, null, true));
 
-let hansDecode = Person.decode(userEncode);
+let userDecode = Person.decode(userEncode);
 
-console.log('Decoded: %s', util.inspect(hansDecode, true, null, true));
+console.log('Decoded: %s', util.inspect(userDecode, true, null, true));
